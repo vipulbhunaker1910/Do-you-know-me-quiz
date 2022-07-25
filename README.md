@@ -1,0 +1,1 @@
+Hi this quiz is about how well do you know about me. Kindly participate and send me the screen shot so that i can add your name in high score list.
