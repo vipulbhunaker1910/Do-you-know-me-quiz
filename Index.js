@@ -4,12 +4,12 @@ var uname=readlineSync.question(chalk.blue("Hi!, What's your name? "));
 console.log(chalk.green('\nHi ')+chalk.blue(uname)+chalk.green(" let's see how well you know Vipul\n"));
 var score=0;
 console.log(chalk.magenta("Instructions\n"));
-console.log(chalk.red('Quiz contains two types of questions.\n 1. Choose the correct Option \n 2. Entering the Answer \n For Choose the option type kindly answer the Option number. For entering the answer kindly make sure your 1st letter of answer should be capital.\n\n'));
+console.log(chalk.red('Quiz contains two types of questions.\n 1. Choose the correct Option \n 2. Entering the Answer \n For each correct answer you will score one point.\n There are no negative score for wrong answers\n\n'));
 var uname=readlineSync.question(chalk.blueBright("Press Enter to continue"));
 console.log("\n");
 function vipgame(question,answer){
   var user_answer=readlineSync.question(question);
-  if(user_answer===answer){
+  if(user_answer.toLowerCase()===answer){
     console.log(chalk.blueBright("\nYayyy! it's right\n"));
     score=score+1;
   }
